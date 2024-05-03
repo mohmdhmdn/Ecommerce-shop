@@ -1105,6 +1105,7 @@ img {
         margin-bottom: 50px; } }
     .footer_area .single_widget_area .subscribtion_form form input {
       width: 100%;
+      outline: none;
       border: none;
       border-bottom: 2px solid rgba(255, 255, 255, 0.6);
       color: rgba(255, 255, 255, 0.6);

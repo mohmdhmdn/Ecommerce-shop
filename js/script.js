@@ -1,13 +1,13 @@
 total = 0;
-inum = document.getElementById("itemNB");
-c = 0;
+inum = document.getElementById("itemNB"); // item counter on add-to-cart icon
+c = 0; //item counter here in javascript
 const addToCard = (btn, e) => {
     if (btn.innerHTML !== "added!"){
         btn.innerHTML = "added!";
         total += e;
         document.getElementById("subtotal").innerHTML = total;
-        c++;
-        inum.innerHTML = c;
+        c++; // increment by 1
+        inum.innerHTML = c; // subtotal = counter
     }else{
         btn.innerHTML = "add to cart";
         total -= e;
@@ -16,3 +16,4 @@ const addToCard = (btn, e) => {
         document.getElementById("subtotal").innerHTML = total;
     }
 }
+
